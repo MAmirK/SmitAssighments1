@@ -1,19 +1,20 @@
 void main() {
   print(
-      "Q.5: Create a map with name, phone keys and store some values to it. Use where to find all keys that have length 4.");
-  Map<String, dynamic> phoneDirectory = {
-    'john': 'John Ahmed',
-    'john phone': 1233454568,
-    'alice': 'Alice Smith',
-    'alice phone': 9876543210,
-    'michael': 'Michael Johnson',
-    'michael phone': 5551234567,
-    'sara': 'Sara Lee',
-    'sara phone': 2468135790,
-    'david': 'David Brown',
-    'david phone': 1357924680,
+      "Q.6: Create Map variable name world then inside it create countries Map, Key will be the name country & country value will have another map having capitalCity, currency and language to it. by using any country key print all the value of Capital & Currency.");
+  Map<String, List<dynamic>> world = {
+    "USA": ["Washington", "dollar", "English"],
+    "Canada": ["Ottawa", "Canadian dollar", "English, French"],
+    "United Kingdom": ["London", "British pound", "English"],
+    "Australia": ["Canberra", "Australian dollar", "English"],
+    "Germany": ["Berlin", "Euro", "German"],
+    "Japan": ["Tokyo", "Japanese yen", "Japanese"],
+    "France": ["Paris", "Euro", "French"],
+    "Brazil": ["Brazil", "Brazilian real", "Portuguese"],
+    "India": ["New Delhi", "Indian rupee", "Hindi, English"],
+    "South Africa": ["Pretoria", "South African rand", "Afrikaans, English"],
   };
-  List<String> keys =
-      phoneDirectory.keys.where((element) => element.length == 4).toList();
-  print(keys);
+  print('USA');
+  world["USA"]!.forEach((element) => print(element));
+  print('Japan');
+  world["Japan"]!.forEach((element) => print(element));
 }
