@@ -2,7 +2,7 @@ void main() {
   Map<dynamic, dynamic> product = {
     'name': 'COLA',
     'price': 220,
-    'quantity': 0,
+    'quantity': 65,
   };
   if (product['quantity'] > 0) {
     print('In Stock');
