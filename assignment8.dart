@@ -6,6 +6,6 @@ void main() {
     {'name': 'Sarah', 'eligible': true},
     {'name': 'Tom', 'eligible': false},
   ];
-  usersEligibility.removeWhere((element) => element == false);
+  usersEligibility.removeWhere((user) => user['eligible'] == false);
   print(usersEligibility);
 }
