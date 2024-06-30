@@ -1,10 +1,12 @@
 void main() {
-  Map<dynamic, List> user = {
-    'name': ['isAdmin', 'isActive']
+  Map<dynamic, dynamic> user = {
+    'name': 'Ali',
+    'isAdmin': true,
+    'isActive': true,
   };
-  if (user['name'].contains('isAdmin') || user['name'].contains('isActive')) {
-    print('Active Admin');
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('ACTIVE ADMIN');
   } else {
-    print('Not an Active Admin');
+    print('NOT AN ACTIVE ADMIN');
   }
 }
